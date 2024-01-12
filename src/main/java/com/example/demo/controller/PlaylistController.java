@@ -34,7 +34,7 @@ public class PlaylistController {
 		//updating playlist table
 		playlistService.addPlaylist(playlist);
 		
-		System.out.println(playlist);
+		//System.out.println(playlist);
 		
 		//updating song table 
 		List<Song> songList = playlist.getSongs();

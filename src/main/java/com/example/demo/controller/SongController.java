@@ -30,20 +30,24 @@ public class SongController {
 		return "adminHome";
 	}
 	
+	@GetMapping("/viewSongs")
+	public String viewSongs(Model model) {
+		List<Song> songsList=service.fetchAllSongs();
+		model.addAttribute("songs",songsList);
+		//System.out.println(songsList);
+		return "displaySongs";
+	}
 	@GetMapping("/playSongs")
 	public String playSongs(Model model) {
-		
-		boolean premiumUser = false;
-		
+		boolean premiumUser=false;
 		if(premiumUser == true) {
-			List<Song> songsList = service.fetchAllSongs();
-			model.addAttribute("songs", songsList);
+			List<Song> songsList=service.fetchAllSongs();
+			model.addAttribute("songs",songsList);
 			return "displaySongs";
 		}
 		else {
 			return "makePayment";
 		}
-		
 	}
 
 }
