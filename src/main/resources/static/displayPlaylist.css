@@ -4,7 +4,7 @@ body {
     /* background: url('https://images.unsplash.com/photo-1614149162883-504ce4d13909?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
     background-size: cover; */
     margin: 0;
-    padding: 70px 200px 70px 0px;
+    padding: 100px 200px 100px 200px;
     display: flex;
     justify-content: center;
     align-items: center;
