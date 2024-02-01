@@ -1,31 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/registration.css}">
 </head>
 <body>
-<h1>User Registration:</h1>
+<h1>User Registration</h1>
 	<form action="register" method="post">
-		<label>User name : </label>
+		<label>User name  </label>
 		<input type="text" name="username"/>
 		<br>
-		<label>Email : </label>
+		<label>Email  </label>
 		<input type="email" name="email"/>
 		<br>
-		<label>Password : </label>
+		<label>Password  </label>
 		<input type="password" name="password"/>
 		<br>
-		<label>Gender : </label>
-		<input type="radio" name="gender" value="male"/>M
-		<input type="radio" name="gender" value="female"/>F
-		<input type="radio" name="gender" value="other"/>O
+		<div class="radio-container">
+			<label>Gender: </label>
+			<input type="radio" name="gender" value="male" />M
+			<input type="radio" name="gender" value="female" />F
+			<input type="radio" name="gender" value="other" />O
+		</div>
 		<br>
-		<label>Role : </label>
-		Admin<input type="radio" name="role" value="admin"/>
-		Customer<input type="radio" name="role" value="customer"/>
+		<div class="radio-container">
+			<label>Role: </label>
+			<input type="radio" name="role" value="admin" />Admin
+			<input type="radio" name="role" value="customer" />Customer
+		</div>
 		<br>
-		<label>Address : </label>
+		<label>Address  </label>
 		<textarea name="address"></textarea>
 		<br>
 		<input type="submit" value="Register" />

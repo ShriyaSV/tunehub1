@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #25191c;
+    /* background: url('https://images.unsplash.com/photo-1614149162883-504ce4d13909?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover; */
+    margin: 0;
+    padding: 60px 200px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff0044;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Add a bit of spacing between rows */
+tbody tr {
+    margin-bottom: 10px;
+    
+}
+
+tr{
+    background: rgba(2, 152, 251, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width:400px;
+}
